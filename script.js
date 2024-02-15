@@ -25,7 +25,7 @@ function GeneratePassword(){
     chars += numbers_in.checked ? numbers_chars : "" ;
     chars += symbols_in.checked ? symbols_chars : "" ;
 
-    for (let i = 0; i <= length; i++){
+    for (let i = 1; i <= length; i++){
         let rand = Math.floor(Math.random() * chars.length);
         password += chars.substring(rand, rand+1);
     }
